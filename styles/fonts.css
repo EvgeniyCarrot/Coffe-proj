@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Nunito;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../assets/fonts/Nunito-Bold.woff2) format('woff2'),
+        url(../assets/fonts/Nunito-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: Nunito;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../assets/fonts/Nunito-Regular.woff2) format('woff2'),
+        url(../assets/fonts/Nunito-Regular.woff) format('woff');
+}
+
+@font-face {  
+    font-family: Nunito;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../assets/fonts/Nunito-SemiBold.woff2) format('woff2'),
+        url(../assets/fonts/Nunito-SemiBold.woff) format('woff');
+}
+
+@font-face {  
+    font-family: Nunito;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../assets/fonts/Nunito-LightItalic.woff2) format('woff2'),
+        url(../assets/fonts/Nunito-LightItalic.woff) format('woff');
+}
+
+@font-face {  
+    font-family: Nunito;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../assets/fonts/Nunito-LightItalic.woff2) format('woff2'),
+        url(../assets/fonts/Nunito-LightItalic.woff) format('woff');
+}
+
+@font-face {  
+    font-family: Montserrat;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../assets/fonts/Montserrat-Black.woff2) format('woff2'),
+        url(../assets/fonts/Montserrat-Black.woff) format('woff');
+}
+/*
+Средний и большой дисплей - Black Montserrat +
+Цена продукта, подписи - SemiBold Nunito +
+Название и кнопки - Bold Nunito  +
+Body страницы - Regular Nunito +
+Описание - Light Italic Nunito +
+*/
