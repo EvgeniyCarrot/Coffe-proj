@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;  /*Нормализация блочной модели*/
+}
+
+:where(ul, ol):where([class]){
+    padding-left: 0; /*убираем внутренние отступы слева тегам списков у которых есть атрибуи class*/
+}
+
+body,
+:where(blockquote, figure):where([class]){ /*убираем внешние отступы margin у тега body figure blockquote*/
+    margin: 0;
+}
+
+:where(h1,h2,h3,h4,h5,h6,p,ul,ol,dl):where([class]){
+    margin-block: 0; /*убираем внешние отступы вертикали нужным тегам*/
+}
+
+:where(dd[class]){
+    margin-left: 0; /*убираем левый внешний отступ у тега описания определения*/
+}
+
+:where(ul[class]){
+    list-style: none; /*убираем стандартный маркер маркированному списку*/ 
+}
+
+img{
+    display: block;
+    max-width: 100%; /*убираем пустое пространство под изображением и предотвращаем появление скролла*/
+}
+
+input,
+textarea,
+select,
+button{
+    font: inherit; /*наследуем свойства шрифта от родителя для полей ввода*/
+}
+
+html{
+    height: 100%; /*Используется для "прижатия" подвала сайта*/
+    scroll-behavior: smooth; /*плавный скролл*/
+}
+
+body{
+    min-height: 100%; /*Суть та-же, что и со свойством высоты у тега html*/
+    line-height: 1.5; /*унифицированный интерлиньяж*/
+}
+
+@media(prefers-reduced-motion: reduce){ /*через медиа запросы удаляем все анимации и переходы для тех, у кого 
+                                          анимации и переходы принудительно отключены*/
+    *{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important; 
+    }
+}
