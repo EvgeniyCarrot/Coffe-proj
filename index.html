@@ -28,15 +28,17 @@
             </div>
         </div>
         <div class="header-navigation">
-            <a href="cart.html" class="cart" aria-label="Перейти в корзину">
-                <img src="assets/icons/shopping-cart-3.webp" 
-                    class="cart__img" 
-                    width="30" 
-                    height="30" 
-                    alt="Корзина сайта" 
-                    loading="eager"/>
-                <span class="cart__badge"></span> <!-- Здесь должен будет увеличиваться счетчик товаров-->
-            </a> <!-- Нужно будет добавить script, который при нажатии на кнопку "Купить сейчас"
+            <div class="header-navigation__right"> 
+                <a href="cart.html" class="cart" aria-label="Перейти в корзину">
+                    <img src="assets/icons/shopping-cart-3.webp" 
+                        class="cart__img" 
+                        width="30" 
+                        height="30" 
+                        alt="Корзина сайта" 
+                        loading="eager"/>
+                    <span class="cart__badge"></span> <!-- Здесь должен будет увеличиваться счетчик товаров-->
+                </a> 
+            </div><!-- Нужно будет добавить script, который при нажатии на кнопку "Купить сейчас"
             перенесет пользователя в header сайта, где пользователь сможет нажать на иконку корзины и 
             перейдет на страницу cart.html (пока на стадии обдумывания)-->
             <nav class="navbar">
@@ -192,7 +194,7 @@
                                 <button class="giftset-page__button button__back">
                                     <span class="giftset-page__btn-text">Купить сейчас</span>
                                 </button>
-                                <button class="giftset-page__button">
+                                <button class="giftset-page__button-about">
                                     <span class="giftset-page__btn-text">Подробнее</span>
                                 </button>
                             </div>
@@ -224,7 +226,7 @@
                                 <button class="giftset-page__button button__back">
                                     <span class="giftset-page__btn-text">Купить сейчас</span>
                                 </button>
-                                <button class="giftset-page__button">
+                                <button class="giftset-page__button-about">
                                     <span class="giftset-page__btn-text">Подробнее</span>
                                 </button>
                             </div>
@@ -256,7 +258,7 @@
                                 <button class="giftset-page__button button__back">
                                     <span class="giftset-page__btn-text">Купить сейчас</span>
                                 </button>
-                                <button class="giftset-page__button">
+                                <button class="giftset-page__button-about">
                                     <span class="giftset-page__btn-text">Подробнее</span>
                                 </button>
                             </div>
@@ -286,7 +288,7 @@
                     </div>
                     <div class="comboset-card__button">
                         <button class="comboset-card__btn-text btn-text__back">Купить сейчас</button>
-                        <button class="comboset-card__btn-text">Подробнее</button>
+                        <button class="comboset-card__btn-about">Подробнее</button>
                     </div>
                 </li>
                 <li class="comboset-card__choise">
@@ -304,7 +306,7 @@
                     </div>
                     <div class="comboset-card__button">
                         <button class="comboset-card__btn-text btn-text__back">Купить сейчас</button>
-                        <button class="comboset-card__btn-text">Подробнее</button>
+                        <button class="comboset-card__btn-about">Подробнее</button>
                     </div>
                 </li>
                 <li class="comboset-card__choise">
@@ -322,7 +324,7 @@
                     </div>
                     <div class="comboset-card__button">
                         <button class="comboset-card__btn-text btn-text__back">Купить сейчас</button>
-                        <button class="comboset-card__btn-text">Подробнее</button>
+                        <button class="comboset-card__btn-about">Подробнее</button>
                     </div>
                 </li>
                 <li class="comboset-card__choise">
@@ -341,7 +343,7 @@
                     </div>
                     <div class="comboset-card__button">
                         <button class="comboset-card__btn-text btn-text__back">Купить сейчас</button>
-                        <button class="comboset-card__btn-text">Подробнее</button>
+                        <button class="comboset-card__btn-about">Подробнее</button>
                     </div>
                 </li>
             </ul>
